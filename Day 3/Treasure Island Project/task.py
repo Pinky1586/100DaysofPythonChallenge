@@ -20,14 +20,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+#This is the basic intro plotline
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 input("You exit your boat and walk down the path. <Press Enter to Continue> ")
 input("After some time, you come to a 'Y' in the path. <Press Enter to Continue> ")
 input("You look down the left path. It looks much like the path you are already on. <Press Enter to Continue> ")
 input("The path to the right looks very dark, and full of mosquitoes. <Press Enter to Continue> ")
-boat_path = input("Which path do you choose? <L for Left or R for Right> ")
 
+#This is the first choice you have to make after getting off the boat.
+boat_path = input("Which path do you choose? <L for Left or R for Right> ")
 if boat_path == 'L' or boat_path == 'l':
     lake_path = input("You walk down the path to the left. It winds through grasses and over logs until you reach a lake. "
           "Do you fish or swim? <F for Fish or S for Swim>")
@@ -47,6 +49,8 @@ if boat_path == 'L' or boat_path == 'l':
             input("As you are taking the lure from the fish's mouth, you catch his eye. As you look him in the eye, you begin to feel sad. <Press Enter to Continue>")
             input("You realize you cannot eat this fish now, and set him free. You pack your gear and continue down the path. <Press Enter to Continue> ")
             input("While you are trekking down the path you trip and break your ankle. You lay there and slowly die from starvation. <Press Enter to Continue> ")
+
+#This is the first choice you have to make after getting off the boat.
 if boat_path == 'R' or boat_path == 'r':
     input("You decide that it has been long enough since you've been covered from head to toe in mosquito bites. <Press Enter to Continue> ")
     input("You venture down the path to the right. Before long, you find yourself in a very dark and scary forest. <Press Enter to Continue> ")
