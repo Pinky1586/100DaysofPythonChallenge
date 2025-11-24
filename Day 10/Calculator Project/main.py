@@ -25,14 +25,14 @@ print(art.logo)
 def calculator():
     for key in operations:
         print(key)
-    num1 = int(input(f"What is the first number?: "))
+    num1 = float(input(f"What is the first number?: "))
 
     should_continue = True
 
     while should_continue:
         action = input(f"Pick and operation: ")
         num2 = float(input(f"What is the second number?: "))
-        result = (operations[action](num1, num2))
+        result = float((operations[action](num1, num2)))
         print(f"{num1} {action} {num2} = {result}")
 
         cont = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation: ").lower()
